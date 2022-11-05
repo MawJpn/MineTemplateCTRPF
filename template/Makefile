@@ -7,7 +7,7 @@ endif
 TOPDIR 		?= 	$(CURDIR)
 include $(DEVKITARM)/3ds_rules
 
-TARGET	:= 	made-in-i
+TARGET		:= 	made-in-i
 PLGINFO 	:= 	CTRPluginFramework.plgInfo
 
 BUILD		:= 	Build
@@ -20,7 +20,7 @@ SOURCES 	:= 	Sources
 #---------------------------------------------------------------------------------
 ARCH		:=	-march=armv6k -mlittle-endian -mtune=mpcore -mfloat-abi=hard 
 
-CFLAGS	:=	-Os -mword-relocations \
+CFLAGS		:=	-Os -mword-relocations \
 			-fomit-frame-pointer -ffunction-sections -fno-strict-aliasing \
 			$(ARCH)
 
